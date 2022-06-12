@@ -69,12 +69,15 @@ body {
     height: 100vh;
     position: relative;
     filter: drop-shadow(0 0 5px #222);
+    z-index: 10;
+    
 }
 .main-bg {
     position: relative;
     background-position: 30% 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 10;
 }
 
 .content {
@@ -84,9 +87,10 @@ body {
     width: 100%;
 }
 
-.stripes {
+.space {
     grid-column: 1/2;
 }
+
 
 .content-info {
     grid-column: 2/4;
@@ -345,7 +349,7 @@ hr {
     .content {
         grid-template-columns: 1fr 1fr;
     }
-    .stripes {
+    .space {
         display: none;
     }
     
